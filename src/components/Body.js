@@ -85,7 +85,7 @@ const Body = () => {
                 </li>
               ))}
             </ul>
-            <button onClick={handleOrder}>Order</button>
+            <button id={`order-btn-${popupData.info.name.replace(/\s+/g, '-').toLowerCase()}`} onClick={handleOrder}>Order</button>
             <button onClick={() => setPopupData(null)} style={{ marginLeft: "1rem" }}>Close</button>
           </div>
         </div>
