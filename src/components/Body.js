@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import RestaurantCard from "./RestaurantCard";
 import resData from "../utils/mockData";
-
-// Static menu for all restaurants
-const staticMenu = [
-  { id: 1, name: "Pizza", price: 250 },
-  { id: 2, name: "Burger", price: 120 },
-  { id: 3, name: "Pasta", price: 180 },
-];
+import mockMenu from "../utils/mockMenu";
+import '../styles/index.css';
 
 const Body = () => {
   const [popupData, setPopupData] = useState(null);
@@ -40,6 +35,20 @@ const Body = () => {
     }));
   };
 
+  const handleOrder = () => {
+    const selectedMenu = mockMenu[popupData.name] || [];
+    const orderedItems = selectedMenu
+      .filter(item => itemCounts[item.id] > 0)
+      .map(item => ({
+        name: item.name,
+        quantity: itemCounts[item.id],
+        price: item.price,
+      }));
+    // You can use orderedItems for further logic (e.g. show summary, send to backend, etc.)
+    console.log("Order placed:", orderedItems);
+    setPopupData(null);
+  };
+
   return (
     <div className="body">
       <div className="search">
@@ -56,12 +65,12 @@ const Body = () => {
       {popupData && (
         <div className="popup-overlay" onClick={() => setPopupData(null)}>
           <div className="popup-content" onClick={e => e.stopPropagation()}>
-            <h3>{popupData.name}</h3>
-            <p>{popupData.cuisine}</p>
-            <p>{popupData.address}</p>
+            <h3>{popupData.info.name}</h3>
+            <p>{popupData.info.cuisines && popupData.info.cuisines.join(',')}</p>
+            <p>{popupData.info.locality}</p>
             <h4>Menu</h4>
             <ul>
-              {staticMenu.map(item => (
+              {(mockMenu[popupData.info.name] || []).map(item => (
                 <li key={item.id} style={{ marginBottom: "1rem" }}>
                   <span>{item.name} - ₹{item.price}</span>
                   {itemCounts[item.id] > 0 ? (
@@ -76,7 +85,8 @@ const Body = () => {
                 </li>
               ))}
             </ul>
-            <button onClick={() => setPopupData(null)}>Close</button>
+            <button onClick={handleOrder}>Order</button>
+            <button onClick={() => setPopupData(null)} style={{ marginLeft: "1rem" }}>Close</button>
           </div>
         </div>
       )}
