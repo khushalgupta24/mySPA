@@ -55,7 +55,7 @@ const Body = () => {
         <input type="text" placeholder="Search for restaurants" />
         <button>Search</button>
       </div>
-      <div id="target-offer-container"></div>
+      <div id="target-offer-container">Any eligible offers will be visible here</div>
       <div className="res-container">
         {resData.map((data, idx) => (
           <div key={idx} onClick={() => openPopup(data)} style={{ cursor: "pointer" }}>
