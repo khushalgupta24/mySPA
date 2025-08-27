@@ -53,7 +53,7 @@ const Body = () => {
     <div className="body">
       <div className="search">
         <input type="text" placeholder="Search for restaurants" />
-        <button>Search</button>
+        <button id='search-btn'>Search</button>
       </div>
       <div id="target-offer-container"></div>
       <div className="res-container">
