@@ -191,6 +191,96 @@ const resData = [
     },
     {
         "info": {
+            "id": "509851",
+            "name": "Magic Momo",
+            "cloudinaryImageId": "dh0qsuqritnmbncwrni3",
+            "locality": "Parasia Road",
+            "areaName": "Prasia Road",
+            "costForTwo": "₹300 for two",
+            "cuisines": [
+                "Momos",
+                "Chinese"
+            ],
+            "avgRating": 4.1,
+            "veg": true,
+            "parentId": "129345",
+            "avgRatingString": "4.1",
+            "totalRatingsString": "20+",
+            "sla": {
+                "deliveryTime": 65,
+                "lastMileTravel": 12.3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "60-65 mins",
+                "lastMileTravelString": "12.3 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2024-07-31 22:30:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "v1695133679/badges/Pure_Veg111.png",
+                        "description": "pureveg"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "aggregatedDiscountInfoV2": {},
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "pureveg",
+                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-8b9ecf7d-063f-49c9-9a90-1bb97b969a96"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/magic-momo-parasia-road-prasia-road-chhindwara-509851",
+            "text": "RESTAURANT_MENU",
+            "type": "WEBLINK"
+        },
+        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+        "info": {
             "id": "672945",
             "name": "Annu's Kitchen's Queen Of Paratha",
             "cloudinaryImageId": "dd519572ed1bed19de47e94186e743ea",
@@ -278,96 +368,6 @@ const resData = [
         },
         "cta": {
             "link": "https://www.swiggy.com/restaurants/annus-kitchens-queen-of-paratha-teachers-colony-chhindwara-city-chhindwara-672945",
-            "text": "RESTAURANT_MENU",
-            "type": "WEBLINK"
-        },
-        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
-    },
-    {
-        "info": {
-            "id": "509851",
-            "name": "Magic Momo",
-            "cloudinaryImageId": "dh0qsuqritnmbncwrni3",
-            "locality": "Parasia Road",
-            "areaName": "Prasia Road",
-            "costForTwo": "₹300 for two",
-            "cuisines": [
-                "Momos",
-                "Chinese"
-            ],
-            "avgRating": 4.1,
-            "veg": true,
-            "parentId": "129345",
-            "avgRatingString": "4.1",
-            "totalRatingsString": "20+",
-            "sla": {
-                "deliveryTime": 65,
-                "lastMileTravel": 12.3,
-                "serviceability": "SERVICEABLE",
-                "slaString": "60-65 mins",
-                "lastMileTravelString": "12.3 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-07-31 22:30:00",
-                "opened": true
-            },
-            "badges": {
-                "imageBadges": [
-                    {
-                        "imageId": "v1695133679/badges/Pure_Veg111.png",
-                        "description": "pureveg"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "aggregatedDiscountInfoV2": {},
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "pureveg",
-                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
-                                }
-                            }
-                        ]
-                    },
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {}
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {
-            "context": "seo-data-8b9ecf7d-063f-49c9-9a90-1bb97b969a96"
-        },
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/magic-momo-parasia-road-prasia-road-chhindwara-509851",
             "text": "RESTAURANT_MENU",
             "type": "WEBLINK"
         },
