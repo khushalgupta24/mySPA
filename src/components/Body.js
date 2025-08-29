@@ -69,6 +69,7 @@ const Body = () => {
       {popupData && (
         <div className="popup-overlay" onClick={() => setPopupData(null)}>
           <div className="popup-content" onClick={e => e.stopPropagation()}>
+            <h1 id="popup-offer">offer here</h1>
             <h3>{popupData.info.name}</h3>
             <p>{popupData.info.cuisines && popupData.info.cuisines.join(',')}</p>
             <p>{popupData.info.locality}</p>
