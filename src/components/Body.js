@@ -3,15 +3,18 @@ import RestaurantCard from "./RestaurantCard";
 import resData from "../utils/mockData";
 import mockMenu from "../utils/mockMenu";
 import '../styles/index.css';
+import { useNavigate } from "react-router-dom";
 
 const Body = () => {
   const [popupData, setPopupData] = useState(null);
   const [itemCounts, setItemCounts] = useState({});
+  const navigate = useNavigate();
 
   // Reset item counts when popup opens/closes
   const openPopup = (data) => {
     setPopupData(data);
     setItemCounts({});
+    window.history.pushState({}, '', `/${data.info.name.replace(/\s+/g, '-').toLowerCase()}`);
   };
 
   const handleAdd = (id) => {
