@@ -93,6 +93,7 @@ const Body = () => {
             <button id={`order-btn-${popupData.info.name.replace(/\s+/g, '-').toLowerCase()}`} onClick={handleOrder}>Order</button>
             <button onClick={() => setPopupData(null)} style={{ marginLeft: "1rem" }}>Close</button>
           </div>
+          <h1 id="popup-offer">offer here</h1>
         </div>
       )}
     </div>
