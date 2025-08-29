@@ -281,6 +281,81 @@ const resData = [
     },
     {
         "info": {
+            "id": "912754",
+            "name": "Urban Cafe",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/21/dbe91f1f-b400-4f4b-a78d-c6b99bdc61c5_912754.JPG",
+            "locality": "SOUTH CIVIL LINE",
+            "areaName": "Chhindwara City",
+            "costForTwo": "₹300 for two",
+            "cuisines": [
+                "Snacks",
+                "Pizzas",
+                "Pastas",
+                "Fast Food",
+                "Burgers",
+                "Cafe"
+            ],
+            "veg": true,
+            "parentId": "1330",
+            "avgRatingString": "NEW",
+            "sla": {
+                "deliveryTime": 67,
+                "lastMileTravel": 11.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "65-70 mins",
+                "lastMileTravelString": "11.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextOpenTimeMessage": "Opens next at 11 am, today"
+            },
+            "badges": {},
+            "aggregatedDiscountInfoV2": {},
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {}
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "isNewlyOnboarded": true,
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-8b9ecf7d-063f-49c9-9a90-1bb97b969a96"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/urban-cafe-south-civil-line-chhindwara-city-chhindwara-912754",
+            "text": "RESTAURANT_MENU",
+            "type": "WEBLINK"
+        },
+        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+        "info": {
             "id": "672945",
             "name": "Annu's Kitchen's Queen Of Paratha",
             "cloudinaryImageId": "dd519572ed1bed19de47e94186e743ea",
@@ -515,81 +590,6 @@ const resData = [
         },
         "cta": {
             "link": "https://www.swiggy.com/restaurants/myfit-meals-meal-prep-co-teachers-colony-chhindwara-locality-chhindwara-344937",
-            "text": "RESTAURANT_MENU",
-            "type": "WEBLINK"
-        },
-        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
-    },
-    {
-        "info": {
-            "id": "912754",
-            "name": "Urban Cafe",
-            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/21/dbe91f1f-b400-4f4b-a78d-c6b99bdc61c5_912754.JPG",
-            "locality": "SOUTH CIVIL LINE",
-            "areaName": "Chhindwara City",
-            "costForTwo": "₹300 for two",
-            "cuisines": [
-                "Snacks",
-                "Pizzas",
-                "Pastas",
-                "Fast Food",
-                "Burgers",
-                "Cafe"
-            ],
-            "veg": true,
-            "parentId": "1330",
-            "avgRatingString": "NEW",
-            "sla": {
-                "deliveryTime": 67,
-                "lastMileTravel": 11.4,
-                "serviceability": "SERVICEABLE",
-                "slaString": "65-70 mins",
-                "lastMileTravelString": "11.4 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextOpenTimeMessage": "Opens next at 11 am, today"
-            },
-            "badges": {},
-            "aggregatedDiscountInfoV2": {},
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {}
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "isNewlyOnboarded": true,
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {
-            "context": "seo-data-8b9ecf7d-063f-49c9-9a90-1bb97b969a96"
-        },
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/urban-cafe-south-civil-line-chhindwara-city-chhindwara-912754",
             "text": "RESTAURANT_MENU",
             "type": "WEBLINK"
         },
