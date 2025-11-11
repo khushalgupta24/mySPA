@@ -1,19 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border: 1px solid #666666;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .logo-container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 .logo{
@@ -23,6 +31,7 @@ body{
 
 .logo-container > h1{
     margin: 0;
+    font-size: 18px;
 }
 
 .nav-items{
@@ -30,42 +39,176 @@ body{
 }
 
 .nav-items > ul{
-    font-size: 18px;
+    font-size: 16px;
     list-style-type: none;
     display: flex;
     margin: 0;
     padding: 0;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .nav-items > ul > li{
-    margin: 5px;
-    padding: 5px;
+    margin: 0;
+    padding: 5px 10px;
     cursor: pointer;
 }
 
+.nav-items > ul > li > a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-items > ul > li > a:hover {
+    color: #ff6b35;
+}
+
 .res-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 15px;
 }
 
 .res-card{
-    width: 200px;
     background-color: #f1f1f1;
-    padding: 8px;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .res-card:hover{
     cursor: pointer;
     border: 1px solid black;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .res-logo{
     width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 .search{
-    padding: 10px;
+    padding: 15px;
+}
+
+/* ===== MOBILE RESPONSIVE (< 500px) ===== */
+@media (max-width: 499px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .logo-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo-container > h1 {
+        font-size: 16px;
+    }
+
+    .nav-items {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-items > ul {
+        font-size: 14px;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .nav-items > ul > li {
+        padding: 5px 8px;
+    }
+
+    .res-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .res-card {
+        background-color: red;
+        padding: 10px;
+    }
+
+    .res-card h2 {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .res-card h3 {
+        font-size: 12px;
+        margin: 3px 0;
+    }
+
+    .res-card h4 {
+        font-size: 11px;
+        margin: 3px 0;
+    }
+
+    .res-logo {
+        height: 120px;
+    }
+
+    .search {
+        padding: 10px;
+    }
+}
+
+/* ===== TABLET RESPONSIVE (500px - 768px) ===== */
+@media (min-width: 500px) and (max-width: 768px) {
+    .header {
+        padding: 12px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-container > h1 {
+        font-size: 20px;
+    }
+
+    .nav-items > ul {
+        font-size: 15px;
+        gap: 12px;
+    }
+
+    .res-container {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .res-card {
+        padding: 10px;
+    }
+}
+
+/* ===== DESKTOP RESPONSIVE (> 768px) ===== */
+@media (min-width: 769px) {
+    .header {
+        padding: 15px 20px;
+    }
+
+    .res-container {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .res-card {
+        padding: 12px;
+    }
 }
 
 /* ...existing code... */

@@ -1,14 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import RestaurantCard from "./RestaurantCard";
 import resData from "../utils/mockData";
 import mockMenu from "../utils/mockMenu";
 import '../styles/index.css';
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Body = () => {
   const [popupData, setPopupData] = useState(null);
   const [itemCounts, setItemCounts] = useState({});
+  const location = useLocation();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    // Always reset URL to home on initial mount (refresh)
+    if (location.pathname !== "/") {
+      navigate("/", { replace: true });
+    }
+    setPopupData(null);
+    setItemCounts({});
+  }, []);
 
   // Reset item counts when popup opens/closes
   const openPopup = (data) => {
@@ -50,6 +60,12 @@ const Body = () => {
     // You can use orderedItems for further logic (e.g. show summary, send to backend, etc.)
     console.log("Order placed:", orderedItems);
     setPopupData(null);
+    window.history.pushState({}, '', '/');
+  };
+
+   const handleClose = () => {
+    setPopupData(null);
+    window.history.pushState({}, '', '/'); // Reset URL to home after close
   };
 
   return (
@@ -91,9 +107,8 @@ const Body = () => {
               ))}
             </ul>
             <button id={`order-btn-${popupData.info.name.replace(/\s+/g, '-').toLowerCase()}`} onClick={handleOrder}>Order</button>
-            <button onClick={() => setPopupData(null)} style={{ marginLeft: "1rem" }}>Close</button>
+            <button onClick={handleClose} style={{ marginLeft: "1rem" }}>Close</button>
           </div>
-          <h1 id="popup-offer">offer here</h1>
         </div>
       )}
     </div>
